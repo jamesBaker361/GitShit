@@ -1,0 +1,18 @@
+<div id="convo">
+<div id="convoTop"><table><tr><th><div id="chatName"><%= name %></div></th><th><div id="backButton">Back</div></th><th><form id="renameButton"><input id="renameInput" type="text"></form></th></tr></table></div>
+<div id="messagesBox">
+<% for(var y=0;y<messages.length;y++){ %>
+<% var h="message"+y.toString(); %>
+<div class= "message" >
+<div id= <%= h %> class=<%= messages[y].userKey+ " message" %>>
+	<div key=<%= messages[y].userKey %> class="messageUser"><%= messages[y].username %> </div>
+	<div id="messageContent"> <%= messages[y].content %></div>
+</div>
+</div>
+<% } %>
+</div>
+<form id="messageForm">
+<input id="messageInput" type="text" id="messageInput">
+</form>
+</div>
+<script src="js/convo.js"></script>

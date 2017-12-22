@@ -1,0 +1,15 @@
+<div id="usermain">
+<h1><%= name %></h1>
+<h4>All Chats</h4>
+<ul>
+<% for(var i=0; i<convos.length;i++){ %>
+<% var idv="joinButton"+i.toString() %>
+	<li><div class="joinButton" id="<%= idv %>" value= "<%= convos[i] %>" >Join</div></li>
+<% } %>
+</ul>
+<div id="userList">
+
+</div>
+<script src="js/usermain.js"></script>
+</script>
+</div>

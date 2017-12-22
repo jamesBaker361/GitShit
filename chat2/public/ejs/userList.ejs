@@ -1,0 +1,10 @@
+<h5>Select Users to make a new chat</h5>
+<div id="userSubList">
+<% for(var t=0;t<ulist.length;t++){ %>
+	<div class="userClick" name=<%=ulist[t].name %> id=<%= ulist[t].key %> ><%=ulist[t].name %></div>
+<% } %>
+</div>
+<form id="newChatForm">
+<input type="submit" value="New Chat">
+</form>
+<script src="/js/userList.js"></script>
